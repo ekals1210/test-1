@@ -39,3 +39,35 @@
 
       => 한 서버 내에서 여러 개 사용이 가능하다
   
+  ### HTTP 메소드, 라우팅, 콜백함수
+    ```
+    app.get('/', (req, res) => {
+      res.send('hello world!')
+    })
+    ```
+    #### HTTP 메소드
+    - Request(요청) -> Response(응답)
+      => 요청의 목적, 종류를 알리는 수단
+      ex) get - 주소창 데이터 전달 post - 내부적으로 body에 데이터 전달
+    #### 라우팅 : '/'
+    ex) https://www.youtube.com/watch?v=zl5b-DAutK
+  
+    => 라우팅에 따라서 보여지는 웹페이지가 달라진다
+
+      ```
+      / : 기본페이지
+      /about : 소개하는 페이지
+      /board : 게시판 페이지
+      /board/write : 게시판 작성글 페이지
+      ```
+
+    #### 콜백함수 (callback)
+    - 함수(끝나고 실행할 함수)
+
+    ```
+    setTimeout(()=>{console.log("1초")},1000)
+    //setTimeout 함수 진행 후, 1초동안 잠시 대기 후 console.log 함수를 실행해라
+    ```
+    => 함수 실행 순서를 지정해준 느낌?
+  
+    
